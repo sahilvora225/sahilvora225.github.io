@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "- Purpose of this website is to display the technical abilities of Sahil Vora to the professional world in a digitally sound way. - This website also displays contact points for the visitors, so that they can communicate with Sahil Vora quickly.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o src/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahilvora225/portfolio-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahilvora225/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/sahilvora225/portfolio-website#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
