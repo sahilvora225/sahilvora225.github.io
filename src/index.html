@@ -2,15 +2,75 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" `>
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/index.css">
-  <title>Document</title>
+  <title>Sahil Vora | Portfolio Website | Digital Resume</title>
+  <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+  <!-- Add meta description -->
+  <!-- Add Robots.txt file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  Hello World! This is Sahil Vora.
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-items">
+        <div class="logo-holder">
+          <img src="images/Logo.png" alt="Logo">
+        </div>
+        <ul class="nav-tabs">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="theme-selector">
+          <input type="checkbox" class="toggle-switch" id="theme-switch">
+          <label for="theme-switch">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </label>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="home">
+    <div class="container">
+      <div class="info-section">
+        <div class="primary-highlight">
+          Introducing
+        </div>
+        <h2>Hello</h2>
+        <h1>I'm Sahil Vora</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe laborum neque autem consectetur unde odio
+          quod
+          a voluptatum, qui aspernatur, vitae accusantium! Minima nam fugiat neque earum error quis debitis.</p>
+        <a href="#contact" class="btn-secondary">Contact Me</a>
+      </div>
+      <div class="display-photo">
+        <div class="outer-circle">
+          <div class="inner-circle"></div>
+          <div class="logo-capsule">
+            <img src="images/html.svg" alt="HTML">
+          </div>
+          <div class="logo-capsule">
+            <img src="images/css.svg" alt="CSS">
+          </div>
+          <div class="logo-capsule">
+            <img src="images/react.svg" alt="React">
+          </div>
+          <div class="logo-capsule">
+            <img src="images/django.svg" alt="Django">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
