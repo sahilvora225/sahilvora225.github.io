@@ -1,0 +1,85 @@
+#navbar .container .nav-items {
+  flex-direction: column; }
+  #navbar .container .nav-items .logo-holder {
+    height: 5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #navbar .container .nav-items .logo-holder img {
+      width: 50%; }
+    #navbar .container .nav-items .logo-holder .menu-button {
+      display: block;
+      height: 1px;
+      width: 1.8rem;
+      background-color: #ffffff;
+      position: relative;
+      transition: all 0.2s ease-in; }
+      #navbar .container .nav-items .logo-holder .menu-button::before, #navbar .container .nav-items .logo-holder .menu-button::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 1.8rem;
+        background-color: #ffffff;
+        position: absolute;
+        top: -10px; }
+      #navbar .container .nav-items .logo-holder .menu-button::after {
+        top: 12px; }
+      #navbar .container .nav-items .logo-holder .menu-button--open {
+        transform: rotate(135deg); }
+        #navbar .container .nav-items .logo-holder .menu-button--open::before {
+          top: 0;
+          transform: rotate(90deg); }
+        #navbar .container .nav-items .logo-holder .menu-button--open::after {
+          display: none; }
+  #navbar .container .nav-items .nav-tabs {
+    display: none;
+    flex-direction: column;
+    border-top: 1px solid #ffffff;
+    padding-top: 1rem;
+    transition: all 0.2s ease-in; }
+    #navbar .container .nav-items .nav-tabs li a {
+      display: block;
+      padding: 0.5rem 0rem;
+      margin: 0rem;
+      text-align: center; }
+
+#home .container {
+  flex-direction: column; }
+  #home .container .info-section {
+    width: 100%; }
+    #home .container .info-section h2 {
+      font-size: 1.8rem; }
+    #home .container .info-section h1 {
+      font-size: 2.8rem; }
+    #home .container .info-section p {
+      display: none; }
+    #home .container .info-section .btn-secondary {
+      display: none; }
+  #home .container .display-photo {
+    width: 100%; }
+    #home .container .display-photo .outer-circle {
+      border-width: 2rem; }
+
+@media (max-width: 500px) {
+  #skills .container .flex-container .services {
+    display: flex;
+    flex-direction: column; }
+  #tech .container .flex-container .tech-arena {
+    grid-template-columns: repeat(2, 1fr); }
+  #projects .container .flex-container .project .image-holder {
+    width: 100%;
+    margin-bottom: 4rem; }
+  #contact {
+    padding: 5rem 1rem; }
+    #contact .container .contact-arena {
+      margin: 0rem;
+      padding: 1rem; }
+      #contact .container .contact-arena .solid-circle-prop {
+        display: none; }
+      #contact .container .contact-arena .hollow-circle-prop {
+        display: none; }
+      #contact .container .contact-arena h2 {
+        font-size: 1.5rem; }
+  #footer .container .flex-container p {
+    text-align: center; } }

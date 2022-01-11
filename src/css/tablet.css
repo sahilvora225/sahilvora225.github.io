@@ -1,0 +1,63 @@
+#navbar .container .nav-items .logo-holder {
+  height: 5rem; }
+
+#navbar .container .nav-items .nav-tabs li a {
+  padding: 0rem;
+  margin: 1rem; }
+
+#home {
+  padding-top: 1rem; }
+  #home .container .info-section {
+    width: 30%; }
+    #home .container .info-section h2 {
+      font-size: 2rem; }
+    #home .container .info-section h1 {
+      font-size: 3rem; }
+    #home .container .info-section p {
+      display: none; }
+  #home .container .display-photo {
+    width: 65%; }
+
+#skills .container .flex-container {
+  flex-direction: column-reverse; }
+  #skills .container .flex-container .services {
+    width: 100%; }
+  #skills .container .flex-container .info {
+    width: 100%; }
+
+#tech .container .flex-container {
+  flex-direction: column; }
+  #tech .container .flex-container .info {
+    width: 100%; }
+  #tech .container .flex-container .tech-arena {
+    width: 100%;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr); }
+
+#projects .container .flex-container .project {
+  flex-direction: column-reverse; }
+  #projects .container .flex-container .project:last-child {
+    margin-bottom: 0rem; }
+  #projects .container .flex-container .project .info {
+    width: 100%; }
+  #projects .container .flex-container .project .image-holder {
+    width: 60%;
+    margin-bottom: 4rem; }
+
+#contact .container .contact-arena {
+  padding: 2rem; }
+  #contact .container .contact-arena .solid-circle-prop {
+    top: -13rem;
+    left: -13rem; }
+  #contact .container .contact-arena .hollow-circle-prop {
+    bottom: -13rem;
+    right: -13rem; }
+  #contact .container .contact-arena p {
+    width: 100%; }
+
+#footer .container .flex-container {
+  flex-direction: column; }
+  #footer .container .flex-container .logo-holder {
+    height: 7rem; }
+  #footer .container .flex-container p {
+    margin: 4rem 0rem; }

@@ -134,6 +134,9 @@ img {
     top: 10px;
     left: -1.5rem; }
 
+.highlight-text {
+  color: #f72c25; }
+
 .btn-secondary {
   display: inline-block;
   color: #252529;
@@ -162,6 +165,8 @@ body {
     #navbar .container .nav-items .logo-holder {
       flex: 1;
       height: 7rem; }
+      #navbar .container .nav-items .logo-holder .menu-button {
+        display: none; }
     #navbar .container .nav-items .nav-tabs {
       flex: 2;
       list-style: none;
@@ -197,39 +202,33 @@ body {
         font-weight: 600; }
     #home .container .display-photo {
       width: 50%;
+      align-self: flex-end;
       padding: 2rem;
       position: relative; }
       #home .container .display-photo .outer-circle {
         height: 100%;
-        background-color: #f72c25;
         border-radius: 50%;
+        border: 4rem solid #f72c25;
         aspect-ratio: 1;
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
-        animation: outer-circle-rotation 6s linear infinite; }
-        #home .container .display-photo .outer-circle .inner-circle {
-          height: 70%;
-          background-color: #252529;
-          border-radius: 50%;
-          aspect-ratio: 1; }
+        position: relative; }
         #home .container .display-photo .outer-circle .logo-capsule {
           background-color: #2e2b33;
           border-radius: 50%;
-          height: 6rem;
-          width: 6rem;
-          padding: 1rem;
-          position: absolute;
-          animation: logo-capsule-rotation 6s linear infinite; }
+          height: 19%;
+          width: 19%;
+          padding: 4%;
+          position: absolute; }
+          #home .container .display-photo .outer-circle .logo-capsule:nth-child(1) {
+            animation: first-capsule-revolution 6s linear infinite; }
           #home .container .display-photo .outer-circle .logo-capsule:nth-child(2) {
-            top: -2.5rem; }
+            animation: second-capsule-revolution 6s linear infinite; }
           #home .container .display-photo .outer-circle .logo-capsule:nth-child(3) {
-            left: -3rem; }
+            animation: third-capsule-revolution 6s linear infinite; }
           #home .container .display-photo .outer-circle .logo-capsule:nth-child(4) {
-            bottom: -1.5rem; }
-          #home .container .display-photo .outer-circle .logo-capsule:nth-child(5) {
-            right: -2rem; }
+            animation: fourth-capsule-revolution 6s linear infinite; }
       #home .container .display-photo .model-holder {
         height: 100%;
         position: absolute;
@@ -240,7 +239,7 @@ body {
           object-fit: cover; }
 
 #skills {
-  padding: 5rem 1rem; }
+  padding: 5rem 2rem; }
   #skills .container .flex-container {
     align-items: center;
     justify-content: space-between;
@@ -285,7 +284,7 @@ body {
         font-size: 2.5rem; }
 
 #tech {
-  margin: 10rem 2rem; }
+  padding: 5rem 2rem; }
   #tech .container .flex-container {
     align-items: center;
     gap: 4rem; }
@@ -299,6 +298,9 @@ body {
       width: 50%;
       grid-template-columns: repeat(4, 1fr);
       gap: 2rem; }
+      @media (max-width: 1100px) {
+        #tech .container .flex-container .tech-arena {
+          grid-template-columns: repeat(3, 1fr); } }
       #tech .container .flex-container .tech-arena .tech {
         background-color: #252529;
         color: #f72c25;
@@ -448,22 +450,50 @@ body {
         #footer .container .flex-container .social-section .social-holder a {
           color: #f72c25; }
 
-@keyframes outer-circle-rotation {
+@keyframes first-capsule-revolution {
+  0% {
+    transform: rotate(0deg) translateY(330%) rotate(0deg); }
   25% {
-    transform: rotateZ(90deg); }
+    transform: rotate(90deg) translateY(330%) rotate(-90deg); }
   50% {
-    transform: rotateZ(180deg); }
+    transform: rotate(180deg) translateY(330%) rotate(-180deg); }
   75% {
-    transform: rotateZ(270deg); }
+    transform: rotate(270deg) translateY(330%) rotate(-270deg); }
   100% {
-    transform: rotateZ(360deg); } }
+    transform: rotate(360deg) translateY(330%) rotate(-360deg); } }
 
-@keyframes logo-capsule-rotation {
+@keyframes second-capsule-revolution {
+  0% {
+    transform: rotate(0deg) translateX(350%) rotate(0deg); }
   25% {
-    transform: rotateZ(-90deg); }
+    transform: rotate(90deg) translateX(350%) rotate(-90deg); }
   50% {
-    transform: rotateZ(-180deg); }
+    transform: rotate(180deg) translateX(350%) rotate(-180deg); }
   75% {
-    transform: rotateZ(-270deg); }
+    transform: rotate(270deg) translateX(350%) rotate(-270deg); }
   100% {
-    transform: rotateZ(-360deg); } }
+    transform: rotate(360deg) translateX(350%) rotate(-360deg); } }
+
+@keyframes third-capsule-revolution {
+  0% {
+    transform: rotate(0deg) translateY(-340%) rotate(0deg); }
+  25% {
+    transform: rotate(90deg) translateY(-340%) rotate(-90deg); }
+  50% {
+    transform: rotate(180deg) translateY(-340%) rotate(-180deg); }
+  75% {
+    transform: rotate(270deg) translateY(-340%) rotate(-270deg); }
+  100% {
+    transform: rotate(360deg) translateY(-340%) rotate(-360deg); } }
+
+@keyframes fourth-capsule-revolution {
+  0% {
+    transform: rotate(0deg) translateX(-355%) rotate(0deg); }
+  25% {
+    transform: rotate(90deg) translateX(-355%) rotate(-90deg); }
+  50% {
+    transform: rotate(180deg) translateX(-355%) rotate(-180deg); }
+  75% {
+    transform: rotate(270deg) translateX(-355%) rotate(-270deg); }
+  100% {
+    transform: rotate(360deg) translateX(-355%) rotate(-360deg); } }
