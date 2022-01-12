@@ -9,29 +9,33 @@
     #navbar .container .nav-items .logo-holder img {
       width: 50%; }
     #navbar .container .nav-items .logo-holder .menu-button {
-      display: block;
-      height: 1px;
-      width: 1.8rem;
-      background-color: #ffffff;
-      position: relative;
-      transition: all 0.2s ease-in; }
-      #navbar .container .nav-items .logo-holder .menu-button::before, #navbar .container .nav-items .logo-holder .menu-button::after {
-        content: "";
+      display: flex;
+      height: 30px;
+      align-items: center; }
+      #navbar .container .nav-items .logo-holder .menu-button > div {
         display: block;
         height: 1px;
         width: 1.8rem;
         background-color: #ffffff;
-        position: absolute;
-        top: -10px; }
-      #navbar .container .nav-items .logo-holder .menu-button::after {
-        top: 12px; }
-      #navbar .container .nav-items .logo-holder .menu-button--open {
+        position: relative;
+        transition: all 0.2s ease-in; }
+        #navbar .container .nav-items .logo-holder .menu-button > div::before, #navbar .container .nav-items .logo-holder .menu-button > div::after {
+          content: "";
+          display: block;
+          height: 1px;
+          width: 1.8rem;
+          background-color: #ffffff;
+          position: absolute;
+          top: -10px; }
+        #navbar .container .nav-items .logo-holder .menu-button > div::after {
+          top: 12px; }
+      #navbar .container .nav-items .logo-holder .menu-button--open > div {
         transform: rotate(135deg); }
-        #navbar .container .nav-items .logo-holder .menu-button--open::before {
+        #navbar .container .nav-items .logo-holder .menu-button--open > div::before {
           top: 0;
           transform: rotate(90deg); }
-        #navbar .container .nav-items .logo-holder .menu-button--open::after {
-          display: none; }
+        #navbar .container .nav-items .logo-holder .menu-button--open > div::after {
+          height: 0px; }
   #navbar .container .nav-items .nav-tabs {
     display: none;
     flex-direction: column;

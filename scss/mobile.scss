@@ -17,38 +17,46 @@
         }
 
         .menu-button {
-          display: block;
-          height: 1px;
-          width: 1.8rem;
-          background-color: $white;
-          position: relative;
-          transition: all 0.2s ease-in;
+          display: flex;
+          height: 30px;
+          align-items: center;
 
-          &::before,
-          &::after {
-            content: "";
+          & > div {
             display: block;
             height: 1px;
             width: 1.8rem;
             background-color: $white;
-            position: absolute;
-            top: -10px;
-          }
+            position: relative;
+            transition: all 0.2s ease-in;
 
-          &::after {
-            top: 12px;
-          }
-
-          &--open {
-            transform: rotate(135deg);
-
-            &::before {
-              top: 0;
-              transform: rotate(90deg);
+            &::before,
+            &::after {
+              content: "";
+              display: block;
+              height: 1px;
+              width: 1.8rem;
+              background-color: $white;
+              position: absolute;
+              top: -10px;
             }
 
             &::after {
-              display: none;
+              top: 12px;
+            }
+          }
+
+          &--open {
+            & > div {
+              transform: rotate(135deg);
+
+              &::before {
+                top: 0;
+                transform: rotate(90deg);
+              }
+
+              &::after {
+                height: 0px;
+              }
             }
           }
         }

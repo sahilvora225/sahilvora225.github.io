@@ -4,7 +4,7 @@
   "description": "- Purpose of this website is to display the technical abilities of Sahil Vora to the professional world in a digitally sound way. - This website also displays contact points for the visitors, so that they can communicate with Sahil Vora quickly.",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o src/css/ --recursive"
+    "sass": "node-sass -w scss/ -o css/ --recursive"
   },
   "repository": {
     "type": "git",
