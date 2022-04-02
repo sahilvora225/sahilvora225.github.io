@@ -73,6 +73,10 @@ ul {
   color: $primary-color;
 }
 
+a.highlight-text {
+  text-decoration: underline;
+}
+
 .btn-secondary {
   display: inline-block;
   color: $black;
